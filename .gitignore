@@ -1,0 +1,10 @@
+
+__pycache__
+.venv
+venv
+.env
+.chroma
+
+**/chroma_db
+
+.gradio
