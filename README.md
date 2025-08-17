@@ -201,7 +201,7 @@ This project requires the following dependencies:
 
 ### Installation
 
-Build ClaimGuard from the source and intsall dependencies:
+Build ClaimGuard from the source and install dependencies:
 
 1. **Clone the repository:**
 
@@ -215,27 +215,13 @@ Build ClaimGuard from the source and intsall dependencies:
     ❯ cd ClaimGuard
     ```
 
-3. **Install the dependencies:**
-
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![pip][pip-shield]][pip-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [pip-shield]: https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white -->
-	<!-- [pip-link]: https://pypi.org/project/pip/ -->
-
-	**Using [pip](https://pypi.org/project/pip/):**
-
-	```sh
-	❯ pip install -r requirements.txt
-	```
-
 ### Usage
 
 Run the project with:
 
 **Using [pip](https://pypi.org/project/pip/):**
 ```sh
-python {entrypoint}
+python main.py
 ```
 
 ---
