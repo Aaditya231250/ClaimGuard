@@ -1,25 +1,17 @@
-<div id="top">
+<div id="top"></div>
 
-<!-- HEADER STYLE: CLASSIC -->
 <div align="center">
+  <br/>
+  <h1>CLAIMGUARD</h1>
+  <h3><em>Smart claims. Faster decisions. Lower risk.</em></h3>
+  <p>An AI-powered application that automates the assessment of insurance claim risk, leveraging a RAG pipeline with Google's Gemini Pro for accurate and efficient analysis.</p>
+  <br/>
 
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
-
-# CLAIMGUARD
-
-<em>Smart claims.  Faster decisions. Lower risk.</em>
-
-<!-- BADGES -->
-<img src="https://img.shields.io/github/license/Aaditya231250/ClaimGuard?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-<img src="https://img.shields.io/github/last-commit/Aaditya231250/ClaimGuard?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-<img src="https://img.shields.io/github/languages/top/Aaditya231250/ClaimGuard?style=default&color=0080ff" alt="repo-top-language">
-<img src="https://img.shields.io/github/languages/count/Aaditya231250/ClaimGuard?style=default&color=0080ff" alt="repo-language-count">
-
-<!-- default option, no dependency badges. -->
-
-
-<!-- default option, no dependency badges. -->
-
+  <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/github/license/Aaditya231250/ClaimGuard?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+  <img src="https://img.shields.io/github/last-commit/Aaditya231250/ClaimGuard?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+  <img src="https://img.shields.io/github/languages/top/Aaditya231250/ClaimGuard?style=flat&color=0080ff" alt="repo-top-language">
+  <img src="https://img.shields.io/github/languages/count/Aaditya231250/ClaimGuard?style=flat&color=0080ff" alt="repo-language-count">
 </div>
 <br>
 
@@ -63,7 +55,22 @@ This project streamlines insurance claim processing by automating risk assessmen
 
 ## Features
 
+- **🤖 AI-Powered Risk Scoring:** Leverages the Gemini 1.5 Pro model to intelligently analyze documents and generate a comprehensive risk assessment, including a validity score and violation summaries.
+- **🔍 Hybrid Search RAG Pipeline:** Implements an advanced ensemble retriever combining keyword-based (BM25) and semantic vector-based (ChromaDB) search for highly accurate context retrieval from policy and claim documents.
+- **📄 PDF Document Processing:** Ingests and intelligently parses complex PDF documents (`.pdf`), extracting text and structuring it for analysis.
+- **🌐 Interactive Web UI:** A user-friendly interface built with Gradio allows for easy uploading of claim/policy documents and clear visualisation of the results.
+- **📦 Modular & Scalable Architecture:** Decoupled components for document processing, retrieval, prediction, and UI ensure the system is easy to maintain, test, and scale.
+- **⚙️ Reproducible Environment:** A detailed `requirements.txt` file ensures a consistent and hassle-free setup for all users and developers.
 
+---
+
+## 🛠️ Technology Stack
+
+- **LLM & Frameworks:** LangChain, Google Gemini Pro
+- **Vector Database:** ChromaDB
+- **Retrieval:** Ensemble Retriever (BM25 & Vector Search)
+- **UI:** Gradio
+- **Document Parsing:** PyMuPDF
 
 ---
 
@@ -230,23 +237,6 @@ Run the project with:
 ```sh
 python {entrypoint}
 ```
-
-### Testing
-
-Claimguard uses the {__test_framework__} test framework. Run the test suite with:
-
-**Using [pip](https://pypi.org/project/pip/):**
-```sh
-pytest
-```
-
----
-
-## Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
 
 ---
 
